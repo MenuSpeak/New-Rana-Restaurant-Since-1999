@@ -1198,8 +1198,13 @@
 
    <div class="tabs-scroll">
 <button class="tab active" data-cat="all">🍽️ All Items</button>
-<button class="tab" data-cat="बिरयानी">🍚 Biryani Special</button>
-<button class="tab" data-cat="स्टार्टर">🍗 Starters</button>
+<button class="tab" data-cat="PIZZA">🍕 Pizza</button>
+<button class="tab" data-cat="BURGER">🍔 Burger</button>
+<button class="tab" data-cat="SANDWICH">🥪 Sandwich</button>
+<button class="tab" data-cat="POTATO FRIES">🍟 Potato Fries</button>
+<button class="tab" data-cat="PAVBHAJI">🥘 Pavbhaji</button>
+<button class="tab" data-cat="PULAO">🍛 Pulao</button>
+<button class="tab" data-cat="EXTRAS">➕ Extras</button>   
               </div>  
                 </div>
             </div>
@@ -1345,10 +1350,49 @@
         // Menu Data - FIXED VERSION
         const data = [
 
+{"id": 1, "cat": "PIZZA", "name": "Plain Pizza (Cheese) Margherita (7 inch) | प्लेन पिझ्झा (चिज) (मार्गॅरिटा)", "price": "120/-", "desc": "Classic Cheese Margherita Pizza (7 inch)", "tags": ["Pizza", "Veg", "7 inch", "Cheese"], "img": "img/plain_pizza_7.jpeg"},
+{"id": 2, "cat": "PIZZA", "name": "Plain Pizza (Cheese) Margherita (9 inch) | प्लेन पिझ्झा (चिज) (मार्गॅरिटा)", "price": "170/-", "desc": "Classic Cheese Margherita Pizza (9 inch)", "tags": ["Pizza", "Veg", "9 inch", "Cheese"], "img": "img/plain_pizza_9.jpeg"},
+{"id": 3, "cat": "PIZZA", "name": "Exotic Veg. Pizza (7 inch) | एक्सॉटिक व्हेज पिझ्झा", "price": "140/-", "desc": "Delicious Exotic Veg Pizza (7 inch)", "tags": ["Pizza", "Veg", "7 inch"], "img": "img/exotic_veg_7.jpeg"},
+{"id": 4, "cat": "PIZZA", "name": "Exotic Veg. Pizza (9 inch) | एक्सॉटिक व्हेज पिझ्झा", "price": "190/-", "desc": "Delicious Exotic Veg Pizza (9 inch)", "tags": ["Pizza", "Veg", "9 inch"], "img": "img/exotic_veg_9.jpeg"},
+{"id": 5, "cat": "PIZZA", "name": "Veg Peri Peri Pizza (7 inch) | व्हेज पेरी-पेरी पिझ्झा", "price": "150/-", "desc": "Spicy Veg Peri Peri Pizza (7 inch)", "tags": ["Pizza", "Veg", "Spicy", "7 inch"], "img": "img/veg_peri_peri_7.jpeg"},
+{"id": 6, "cat": "PIZZA", "name": "Veg Peri Peri Pizza (9 inch) | व्हेज पेरी-पेरी पिझ्झा", "price": "200/-", "desc": "Spicy Veg Peri Peri Pizza (9 inch)", "tags": ["Pizza", "Veg", "Spicy", "9 inch"], "img": "img/veg_peri_peri_9.jpeg"},
+{"id": 7, "cat": "PIZZA", "name": "Cheese Corn Pizza (7 inch) | चिज कॉर्न पिझ्झा", "price": "160/-", "desc": "Cheesy Corn Pizza (7 inch)", "tags": ["Pizza", "Veg", "Cheese", "7 inch"], "img": "img/cheese_corn_7.jpeg"},
+{"id": 8, "cat": "PIZZA", "name": "Cheese Corn Pizza (9 inch) | चिज कॉर्न पिझ्झा", "price": "230/-", "desc": "Cheesy Corn Pizza (9 inch)", "tags": ["Pizza", "Veg", "Cheese", "9 inch"], "img": "img/cheese_corn_9.jpeg"},
+{"id": 9, "cat": "PIZZA", "name": "Veg. Cheese Paneer Pizza (7 inch) | व्हेज चिज पनीर पिझ्झा", "price": "170/-", "desc": "Veg Cheese Paneer Pizza (7 inch)", "tags": ["Pizza", "Veg", "Paneer", "7 inch"], "img": "img/veg_cheese_paneer_7.jpeg"},
+{"id": 10, "cat": "PIZZA", "name": "Veg. Cheese Paneer Pizza (9 inch) | व्हेज चिज पनीर पिझ्झा", "price": "240/-", "desc": "Veg Cheese Paneer Pizza (9 inch)", "tags": ["Pizza", "Veg", "Paneer", "9 inch"], "img": "img/veg_cheese_paneer_9.jpeg"},
+{"id": 11, "cat": "PIZZA", "name": "Veg Mushroom Pizza (7 inch) | व्हेज मशरूम पिझ्झा", "price": "170/-", "desc": "Veg Mushroom Pizza (7 inch)", "tags": ["Pizza", "Veg", "Mushroom", "7 inch"], "img": "img/veg_mushroom_7.jpeg"},
+{"id": 12, "cat": "PIZZA", "name": "Veg Mushroom Pizza (9 inch) | व्हेज मशरूम पिझ्झा", "price": "240/-", "desc": "Veg Mushroom Pizza (9 inch)", "tags": ["Pizza", "Veg", "Mushroom", "9 inch"], "img": "img/veg_mushroom_9.jpeg"},
+{"id": 13, "cat": "PIZZA", "name": "Corn + Paneer Pizza (7 inch) | कॉर्न + पनीर पिझ्झा", "price": "180/-", "desc": "Corn and Paneer Pizza (7 inch)", "tags": ["Pizza", "Veg", "Paneer", "Corn", "7 inch"], "img": "img/corn_paneer_7.jpeg"},
+{"id": 14, "cat": "PIZZA", "name": "Corn + Paneer Pizza (9 inch) | कॉर्न + पनीर पिझ्झा", "price": "250/-", "desc": "Corn and Paneer Pizza (9 inch)", "tags": ["Pizza", "Veg", "Paneer", "Corn", "9 inch"], "img": "img/corn_paneer_9.jpeg"},
+{"id": 15, "cat": "BURGER", "name": "Mayonnaise Burger | मायोनिज् बर्गर", "price": "100/-", "desc": "Classic Mayonnaise Burger", "tags": ["Burger", "Veg"], "img": "img/mayo_burger.jpeg"},
+{"id": 16, "cat": "BURGER", "name": "Veg Patty Cheese Burger | व्हेज पॅटी चीज बर्गर", "price": "120/-", "desc": "Veg Patty Cheese Burger", "tags": ["Burger", "Veg", "Cheese"], "img": "img/veg_patty_cheese_burger.jpeg"},
+{"id": 17, "cat": "SANDWICH", "name": "Veg Cheese Grilled Sandwich | व्हेज चीज ग्रील्ड सँडविच", "price": "140/-", "desc": "Grilled Veg Cheese Sandwich", "tags": ["Sandwich", "Veg", "Cheese", "Grilled"], "img": "img/veg_cheese_grilled_sandwich.jpeg"},
+{"id": 18, "cat": "POTATO FRIES", "name": "Plain Fries | प्लेन फ्राईज्", "price": "80/-", "desc": "Classic Salted Plain Fries", "tags": ["Fries", "Veg", "Potato"], "img": "img/plain_fries.jpeg"},
+{"id": 19, "cat": "POTATO FRIES", "name": "Peri Peri Fries | पेरी पेरी फ्राईज्", "price": "100/-", "desc": "Spicy Peri Peri Potato Fries", "tags": ["Fries", "Veg", "Potato", "Spicy"], "img": "img/peri_peri_fries.jpeg"},
+{"id": 20, "cat": "POTATO FRIES", "name": "Cheese Blast Fries | चिज ब्लास्ट फ्राईज्", "price": "130/-", "desc": "Cheese Blast Potato Fries", "tags": ["Fries", "Veg", "Potato", "Cheese"], "img": "img/cheese_blast_fries.jpeg"},
 
 
 
 
+{"id": 21, "cat": "PAVBHAJI", "name": "Sadhi Pavbhaji | साधी पावभाजी", "price": "70/-", "desc": "Classic Sadhi Pavbhaji", "tags": ["Pavbhaji", "Veg"], "img": "img/sadhi_pavbhaji.jpeg"},
+{"id": 22, "cat": "PAVBHAJI", "name": "Butter Pavbhaji | बटर पावभाजी", "price": "80/-", "desc": "Delicious Butter Pavbhaji", "tags": ["Pavbhaji", "Veg", "Butter"], "img": "img/butter_pavbhaji.jpeg"},
+{"id": 23, "cat": "PAVBHAJI", "name": "Paneer Pavbhaji | पनीर पावभाजी", "price": "120/-", "desc": "Special Paneer Pavbhaji", "tags": ["Pavbhaji", "Veg", "Paneer"], "img": "img/paneer_pavbhaji.jpeg"},
+{"id": 24, "cat": "PAVBHAJI", "name": "Butter Paneer Pavbhaji | बटर पनीर पावभाजी", "price": "130/-", "desc": "Butter Paneer Pavbhaji", "tags": ["Pavbhaji", "Veg", "Paneer", "Butter"], "img": "img/butter_paneer_pavbhaji.jpeg"},
+{"id": 25, "cat": "PAVBHAJI", "name": "Cheese Pavbhaji | चिज पावभाजी", "price": "130/-", "desc": "Cheesy Pavbhaji", "tags": ["Pavbhaji", "Veg", "Cheese"], "img": "img/cheese_pavbhaji.jpeg"},
+{"id": 26, "cat": "PULAO", "name": "Veg Pulao | व्हेज पुलाव", "price": "100/-", "desc": "Mixed Veg Pulao", "tags": ["Pulao", "Veg", "Rice"], "img": "img/veg_pulao.jpeg"},
+{"id": 27, "cat": "PULAO", "name": "Paneer Pulao | पनीर पुलाव", "price": "130/-", "desc": "Paneer Pulao", "tags": ["Pulao", "Veg", "Paneer", "Rice"], "img": "img/paneer_pulao.jpeg"},
+{"id": 28, "cat": "PULAO", "name": "Butter Paneer Pulao | बटर पनीर पुलाव", "price": "140/-", "desc": "Butter Paneer Pulao", "tags": ["Pulao", "Veg", "Paneer", "Butter", "Rice"], "img": "img/butter_paneer_pulao.jpeg"},
+{"id": 29, "cat": "PULAO", "name": "Cheese Pulao | चिज पुलाव", "price": "130/-", "desc": "Cheese Pulao", "tags": ["Pulao", "Veg", "Cheese", "Rice"], "img": "img/cheese_pulao.jpeg"},
+{"id": 30, "cat": "EXTRAS", "name": "Papad (Fry) | पापड (फ्राय)", "price": "20/-", "desc": "Fried Papad", "tags": ["Extras", "Papad"], "img": "img/papad_fry.jpeg"},
+{"id": 31, "cat": "EXTRAS", "name": "Masala Papad | मसाला पापड", "price": "30/-", "desc": "Spicy Masala Papad", "tags": ["Extras", "Papad", "Spicy"], "img": "img/masala_papad.jpeg"},
+{"id": 32, "cat": "EXTRAS", "name": "Extra Pav (1 Nos) | एक्स्ट्रा पाव १ नग", "price": "5/-", "desc": "One Extra Pav", "tags": ["Extras", "Bread"], "img": "img/extra_pav.jpeg"},
+{"id": 33, "cat": "EXTRAS", "name": "Butter Pav (1 Nos) | बटर पाव १ नग", "price": "10/-", "desc": "One Extra Butter Pav", "tags": ["Extras", "Bread", "Butter"], "img": "img/butter_pav.jpeg"},
+{"id": 34, "cat": "EXTRAS", "name": "Kadak Pav (1 Side) | कडक पाव (१बाजू)", "price": "10/-", "desc": "Crispy Kadak Pav", "tags": ["Extras", "Bread"], "img": "img/kadak_pav.jpeg"},
+{"id": 35, "cat": "EXTRAS", "name": "Bhaji Plate | भाजी प्लेट साधी", "price": "60/-", "desc": "Extra Normal Bhaji Plate", "tags": ["Extras", "Bhaji"], "img": "img/bhaji_plate.jpeg"},
+{"id": 36, "cat": "EXTRAS", "name": "Butter Bhaji Plate | बटर भाजी प्लेट", "price": "70/-", "desc": "Extra Butter Bhaji Plate", "tags": ["Extras", "Bhaji", "Butter"], "img": "img/butter_bhaji_plate.jpeg"},
+
+
+              
 
           
 
